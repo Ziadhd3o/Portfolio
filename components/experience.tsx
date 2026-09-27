@@ -61,7 +61,7 @@ const skillBadgeVariants = {
     scale: 1,
     transition: { duration: 0.3, delay: 0.1 + i * 0.05, ease: [0.22, 1, 0.36, 1] },
   }),
-  hover: { scale: 1.05, backgroundColor: "oklch(0.8 0.13 195 / 0.2)" },
+  hover: { scale: 1.05 },
 }
 
 function ExperienceCard({ item, index }: { item: TimelineItem; index: number }) {
@@ -153,7 +153,7 @@ function ExperienceCard({ item, index }: { item: TimelineItem; index: number }) 
             {item.skills.map((skill, i) => (
               <motion.span
                 key={skill}
-                className="inline-flex items-center gap-1.5 rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40 hover:bg-cyber/10"
+                className="inline-flex items-center gap-1.5 rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40"
                 variants={skillBadgeVariants}
                 whileHover="hover"
               >

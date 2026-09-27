@@ -40,7 +40,7 @@ const badgeVariants = {
     scale: 1,
     transition: { duration: 0.3, delay: 0.15 + i * 0.05, ease: [0.22, 1, 0.36, 1] },
   }),
-  hover: { scale: 1.05, borderColor: "oklch(0.8 0.13 195 / 0.6)", backgroundColor: "oklch(0.8 0.13 195 / 0.1)" },
+  hover: { scale: 1.05, borderColor: "oklch(0.8 0.13 195 / 0.6)" },
 }
 
 const linkVariants = {
@@ -124,7 +124,7 @@ export function LabsCtfs() {
                   {platform.skills.map((s, idx) => (
                     <motion.span
                       key={s}
-                      className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:border-cyber/40 hover:bg-cyber/5 hover:text-cyber"
+                      className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:border-cyber/40 hover:text-cyber"
                       variants={badgeVariants}
                       whileHover="hover"
                     >

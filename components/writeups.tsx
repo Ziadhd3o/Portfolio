@@ -150,7 +150,7 @@ export function Writeups() {
               {w.tools.map((t, idx) => (
                 <motion.span
                   key={t}
-                  className="font-mono text-xs text-muted-foreground rounded-md px-2 py-0.5 bg-background/60 transition-all hover:text-cyber hover:bg-cyber/5"
+                  className="font-mono text-xs text-muted-foreground rounded-md px-2 py-0.5 bg-background/60 transition-all hover:text-cyber"
                   variants={toolVariants}
                   whileHover="hover"
                 >

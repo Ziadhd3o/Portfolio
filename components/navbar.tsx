@@ -156,7 +156,7 @@ export function Navbar() {
             whileHover="hover"
             whileTap="tap"
           >
-            <Button variant="outline" className="gap-1.5 border-cyber/30 text-cyber hover:bg-cyber/5 hover:border-cyber/50" size="xs">
+            <Button variant="outline" className="gap-1.5 border-cyber/30 text-cyber hover:border-cyber/50" size="xs">
               <FileText className="h-3 w-3" />
               <span>CV</span>
             </Button>
@@ -204,7 +204,7 @@ export function Navbar() {
                       href={item.href}
                       onClick={() => setOpen(false)}
                       className={cn(
-                        "block rounded-md px-3 py-3 text-base text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground",
+                        "block rounded-md px-3 py-3 text-base text-muted-foreground transition-colors hover:text-foreground",
                         active === item.href.slice(1) && "bg-secondary text-foreground",
                       )}
                       whileHover={{ x: 4 }}
@@ -231,7 +231,7 @@ export function Navbar() {
               <motion.li className="mt-2" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
                 <motion.a
                   href={profile.cvUrl}
-                  className="block rounded-md border border-cyber/30 bg-cyber/5 px-3 py-3 text-center text-base font-medium text-cyber transition-colors hover:bg-cyber/10 hover:border-cyber/50"
+                  className="block rounded-md border border-cyber/30 bg-cyber/5 px-3 py-3 text-center text-base font-medium text-cyber transition-colors hover:border-cyber/50"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >

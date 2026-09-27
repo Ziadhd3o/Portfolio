@@ -15,7 +15,6 @@ const cardVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
   hover: {
-    backgroundColor: "oklch(0.26 0.01 240 / 0.5)",
     x: 4,
     transition: { duration: 0.2 },
   },
@@ -56,7 +55,6 @@ export function Reporting() {
       >
         <motion.div
           className="flex items-center gap-2.5 border-b border-border px-5 py-4"
-          whileHover={{ backgroundColor: "oklch(0.26 0.01 240 / 0.5)" }}
         >
           <motion.span
             className="h-4 w-4 text-cyber"

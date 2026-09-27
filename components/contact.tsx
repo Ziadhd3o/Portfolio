@@ -39,7 +39,7 @@ const socialVariants = {
     y: 0,
     transition: { duration: 0.5, delay: 0.15 + i * 0.08, ease: [0.22, 1, 0.36, 1] },
   }),
-  hover: { y: -4, borderColor: "oklch(0.8 0.13 195 / 0.6)", backgroundColor: "oklch(0.8 0.13 195 / 0.05)" },
+  hover: { y: -4, borderColor: "oklch(0.8 0.13 195 / 0.6)" },
 }
 
 export function Contact() {
@@ -199,7 +199,7 @@ export function Contact() {
                   </div>
                 </motion.div>
                 <motion.span
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cyber/5 text-muted-foreground transition-all group-hover:bg-cyber/10 group-hover:text-cyber"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cyber/5 text-muted-foreground transition-all group-hover:text-cyber"
                   whileHover={{ scale: 1.1, rotate: 90 }}
                   transition={{ duration: 0.3 }}
                 >

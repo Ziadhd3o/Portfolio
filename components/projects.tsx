@@ -41,7 +41,7 @@ const conceptVariants = {
     scale: 1,
     transition: { duration: 0.3, delay: 0.2 + i * 0.04, ease: [0.22, 1, 0.36, 1] },
   }),
-  hover: { scale: 1.05, borderColor: "oklch(0.8 0.13 195 / 0.6)", backgroundColor: "oklch(0.8 0.13 195 / 0.1)" },
+  hover: { scale: 1.05, borderColor: "oklch(0.8 0.13 195 / 0.6)" },
 }
 
 const techVariants = {
@@ -93,7 +93,7 @@ export function Projects() {
               transition={{ duration: 0.4 }}
             >
               <motion.span
-                className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40 hover:bg-cyber/10"
+                className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40"
                 variants={badgeVariants}
                 whileHover="hover"
               >
@@ -101,7 +101,7 @@ export function Projects() {
               </motion.span>
               {project.placeholder && (
                 <motion.span
-                  className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:bg-secondary hover:border-border/50"
+                  className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:border-border/50"
                   variants={badgeVariants}
                   whileHover={{ scale: 1.05 }}
                 >
@@ -152,7 +152,7 @@ export function Projects() {
                 {project.concepts.map((c, idx) => (
                   <motion.span
                     key={c}
-                    className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:border-cyber/40 hover:bg-cyber/5 hover:text-foreground"
+                    className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:border-cyber/40 hover:text-foreground"
                     variants={conceptVariants}
                     whileHover="hover"
                   >
@@ -191,7 +191,7 @@ export function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-sm transition-all hover:bg-secondary hover:border-cyber/40 hover:text-cyber"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-sm transition-all hover:border-cyber/40 hover:text-cyber"
                   variants={linkVariants}
                   whileHover="hover"
                   whileTap={{ scale: 0.98 }}

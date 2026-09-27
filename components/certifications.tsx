@@ -143,7 +143,7 @@ export function Certifications() {
               transition={{ duration: 0.4, delay: 0.25 }}
             >
               <motion.span
-                className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs font-mono transition-all hover:border-cyber/40 hover:bg-cyber/5 hover:text-cyber"
+                className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs font-mono transition-all hover:border-cyber/40 hover:text-cyber"
                 whileHover={{ scale: 1.02 }}
               >
                 {cert.date}

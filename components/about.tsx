@@ -41,7 +41,7 @@ const badgeVariants = {
     scale: 1,
     transition: { duration: 0.3, delay: 0.1 + i * 0.05, ease: [0.22, 1, 0.36, 1] },
   }),
-  hover: { scale: 1.05, backgroundColor: "oklch(0.8 0.13 195 / 0.15)" },
+  hover: { scale: 1.05 },
 }
 
 const listVariants = {
@@ -102,7 +102,8 @@ export function About() {
               {interests.map((i, idx) => (
                 <motion.span
                   key={i}
-                  className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40 hover:bg-cyber/10"
+                  className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40"
+              //             inline-flex items-center gap-1.5 rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40
                   variants={badgeVariants}
                   whileHover="hover"
                 >
@@ -127,7 +128,7 @@ export function About() {
               {learning.map((l, idx) => (
                 <motion.span
                   key={l}
-                  className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:bg-secondary hover:border-border/50"
+                  className="rounded-md border border-border bg-secondary/40 px-2.5 py-1 text-xs transition-all hover:border-border/50"
                   variants={badgeVariants}
                   whileHover={{ scale: 1.05 }}
                 >

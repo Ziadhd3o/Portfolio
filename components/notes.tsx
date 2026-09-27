@@ -16,7 +16,7 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
   hover: {
     y: -8,
-    boxShadow: "0 25px 50px -15px oklch(0.8 0.13 195 / 0.15), 0 0 0 1px oklch(0.8 0.13 195 / 0.3)",
+    boxShadow: "0 25px 50px -15px oklch(0.8 0.13 195 / 0.15)",
     borderColor: "oklch(0.8 0.13 195 / 0.4)",
     transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
   },
@@ -108,7 +108,7 @@ export function Notes() {
                     {note.topic}
                   </motion.span>
                   <motion.span
-                    className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cyber/5 text-muted-foreground transition-all group-hover:bg-cyber/10 group-hover:text-cyber"
+                    className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cyber/5 text-muted-foreground transition-all group-hover:text-cyber"
                     whileHover={{ scale: 1.1, rotate: 90 }}
                     transition={{ duration: 0.3 }}
                   >

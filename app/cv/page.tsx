@@ -70,7 +70,7 @@ export default function CVPage() {
               <motion.div className="flex items-center gap-3 mb-6" whileHover={{ x: -4 }} transition={{ duration: 0.2 }}>
                 <motion.button
                   onClick={() => window.history.back()}
-                  className="group inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-4 py-2 text-sm font-medium text-muted-foreground transition-all hover:bg-secondary hover:text-foreground hover:border-border/50"
+                  className="group inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-4 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-foreground hover:border-border/50"
                   whileHover="hover"
                   whileTap="tap"
                   aria-label="Back to Portfolio"
@@ -117,7 +117,7 @@ export default function CVPage() {
 
               <motion.button
                 onClick={handleOpenNewTab}
-                className="group inline-flex items-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-6 py-3 text-base font-medium text-cyber transition-all duration-200 hover:bg-cyber/10 hover:border-cyber/50 hover:shadow-[0_0_20px_-5px_oklch(0.8_0.13_195_/0.2)]"
+                className="group inline-flex items-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-6 py-3 text-base font-medium text-cyber transition-all duration-200 hover:border-cyber/50 hover:shadow-[0_0_20px_-5px_oklch(0.8_0.13_195_/0.2)]"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
@@ -173,7 +173,7 @@ export default function CVPage() {
                       </a>
                       <button
                         onClick={handleOpenNewTab}
-                        className="inline-flex items-center justify-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-5 py-2.5 text-sm font-medium text-cyber transition-colors hover:bg-cyber/10 hover:border-cyber/50"
+                        className="inline-flex items-center justify-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-5 py-2.5 text-sm font-medium text-cyber transition-colors hover:border-cyber/50"
                       >
                         <ExternalLink className="h-4 w-4" />
                         Open in New Tab

@@ -189,7 +189,7 @@ export function Hero() {
 
             <motion.a
               href={profile.cvUrl}
-              className="group inline-flex items-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-5 py-2.5 text-sm font-medium text-cyber transition-all duration-200 hover:bg-cyber/10 hover:border-cyber/50 hover:shadow-[0_0_20px_-5px_oklch(0.8_0.13_195_/0.2)]"
+              className="group inline-flex items-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-5 py-2.5 text-sm font-medium text-cyber transition-all duration-200 hover:border-cyber/50 hover:shadow-[0_0_20px_-5px_oklch(0.8_0.13_195_/0.2)]"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
@@ -200,7 +200,7 @@ export function Hero() {
 
             <motion.a
               href="#contact"
-              className="group inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-5 py-2.5 text-sm font-medium transition-all duration-200 hover:bg-secondary hover:border-border/50"
+              className="group inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-5 py-2.5 text-sm font-medium transition-all duration-200 hover:border-border/50"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"

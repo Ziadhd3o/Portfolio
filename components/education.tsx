@@ -118,7 +118,7 @@ function EducationCard({ item, index }: { item: TimelineItem; index: number }) {
               {item.skills.map((skill, i) => (
                 <motion.span
                   key={skill}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40 hover:bg-cyber/10"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40"
                   variants={badgeVariants}
                   whileHover="hover"
                 >
@@ -198,7 +198,7 @@ export function Education() {
             ].map((course) => (
               <motion.span
                 key={course}
-                className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40 hover:bg-cyber/10"
+                className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
@@ -232,7 +232,7 @@ export function Education() {
             ].map((focus) => (
               <motion.span
                 key={focus}
-                className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40 hover:bg-cyber/10"
+                className="rounded-md border border-cyber/20 bg-cyber/5 px-2.5 py-1 text-xs font-mono text-cyber transition-all hover:border-cyber/40"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
