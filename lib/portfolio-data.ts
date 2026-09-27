@@ -20,16 +20,16 @@ import {
 /* -------------------------------------------------------------------------- */
 
 export const profile = {
-  name: "[ADD YOUR NAME]",
+  name: "Ziad Hodeeb",
   role: "Junior Penetration Tester",
   tagline: "Web Security • API Security • Offensive Security",
   location: "Fayoum, Egypt",
   status: "Open to Opportunities",
-  handle: "@your-handle",
+  handle: "@XIZ0",
   summary:
     "I'm a Computer Science student focused on offensive security — building practical, hands-on experience in web application penetration testing, API security, vulnerability assessment, and reconnaissance. I test only with proper authorization.",
-  email: "[email protected]",
-  resumeUrl: "/cv.pdf",
+  email: "ziad.hd3o@gmail.com",
+  resumeUrl: "/",
   cvUrl: "/cv",
 }
 
@@ -40,10 +40,10 @@ export type SocialLink = {
 }
 
 export const socials: SocialLink[] = [
-  { label: "GitHub", href: "https://github.com/", handle: "/your-github" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/", handle: "/your-linkedin" },
-  { label: "TryHackMe", href: "https://tryhackme.com/p/", handle: "/your-thm" },
-  { label: "Hack The Box", href: "https://app.hackthebox.com/profile/", handle: "/your-htb" },
+  { label: "GitHub", href: "https://github.com/Ziadhd3o", handle: "/Ziadhd3o" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/zhd3o/", handle: "/zhd3o" },
+  { label: "TryHackMe", href: "https://tryhackme.com/p/XIZ0", handle: "/XIZ0" },
+  { label: "Hack The Box", href: "https://app.hackthebox.com/users/2439095", handle: "/ZiadHodeeb" },
 ]
 
 /* -------------------------------------------------------------------------- */
@@ -333,13 +333,13 @@ export type Platform = {
 export const platforms: Platform[] = [
   {
     name: "TryHackMe",
-    href: "https://tryhackme.com/p/",
+    href: "https://tryhackme.com/p/XIZ0",
     blurb: "Guided rooms and learning paths across offensive and defensive security.",
     skills: ["Linux", "Web Security", "Networking", "Cryptography", "Windows Security", "Enumeration"],
   },
   {
     name: "Hack The Box",
-    href: "https://app.hackthebox.com/profile/",
+    href: "https://app.hackthebox.com/users/2439095",
     blurb: "Realistic machines and challenges focused on exploitation and priv-esc.",
     skills: ["Enumeration", "Linux", "Windows", "Privilege Escalation", "Web Security"],
   },
@@ -494,10 +494,10 @@ export const reportSections: string[] = [
 /* -------------------------------------------------------------------------- */
 
 export const achievements: { value: string; label: string }[] = [
-  { value: "[ADD]", label: "TryHackMe rooms completed" },
-  { value: "[ADD]", label: "PortSwigger labs solved" },
-  { value: "[ADD]", label: "CTFs participated in" },
-  { value: "[ADD]", label: "Day learning streak" },
+  { value: "+136", label: "TryHackMe rooms completed" },
+  { value: "+20", label: "PortSwigger labs solved" },
+  { value: "2", label: "CTFs participated in" },
+  { value: "+57", label: "Day learning streak" },
 ]
 
 /* -------------------------------------------------------------------------- */

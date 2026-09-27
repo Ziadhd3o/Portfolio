@@ -34,7 +34,7 @@ export default function CVPage() {
   const handleDownload = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
     const link = document.createElement("a")
-    link.href = "/cv.pdf"
+    link.href = "/Ziad.pdf"
     link.download = `${profile.name.replace(/\s+/g, "-")}-CV.pdf`
     document.body.appendChild(link)
     link.click()
@@ -42,7 +42,7 @@ export default function CVPage() {
   }
 
   const handleOpenNewTab = () => {
-    window.open("/cv.pdf", "_blank", "noopener,noreferrer")
+    window.open("/Ziad.pdf", "_blank", "noopener,noreferrer")
   }
 
   return (
@@ -104,7 +104,7 @@ export default function CVPage() {
               variants={{ ...pageVariants, staggerChildren: 0.08, delayChildren: 0.2 }}
             >
               <motion.a
-                href="/cv.pdf"
+                href="/Ziad.pdf"
                 onClick={handleDownload}
                 className="group inline-flex items-center gap-2 rounded-md bg-cyber px-6 py-3 text-base font-medium text-cyber-foreground transition-all duration-200 hover:opacity-90 hover:shadow-[0_0_30px_-5px_oklch(0.8_0.13_195)] hover:shadow-cyber/40"
                 variants={buttonVariants}
@@ -150,10 +150,11 @@ export default function CVPage() {
 
               <div className="flex-1 relative overflow-hidden">
                 <iframe
-                  src="/cv.pdf"
+                  src="/Ziad.pdf"
                   title="Curriculum Vitae"
                   className="absolute inset-0 h-full w-full border-0"
-                  sandbox="allow-scripts allow-same-origin"
+                  allow="fullscreen"
+                  sandbox="allow-scripts allow-same-origin allow-forms"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-card/95 backdrop-blur-sm p-8 text-center hidden" id="pdf-fallback">
                   <div className="max-w-md">
@@ -164,7 +165,7 @@ export default function CVPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
                       <a
-                        href="/cv.pdf"
+                        href="/Ziad.pdf"
                         onClick={handleDownload}
                         className="inline-flex items-center justify-center gap-2 rounded-md bg-cyber px-5 py-2.5 text-sm font-medium text-cyber-foreground transition-opacity hover:opacity-90"
                       >
