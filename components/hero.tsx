@@ -187,16 +187,23 @@ export function Hero() {
               </motion.span>
             </motion.a>
 
-            <motion.a
-              href={profile.cvUrl}
+            <motion.button
+              onClick={() => {
+                const link = document.createElement('a')
+                link.href = '/Ziad.pdf'
+                link.download = 'Ziad-Hodeeb-CV.pdf'
+                document.body.appendChild(link)
+                link.click()
+                document.body.removeChild(link)
+              }}
               className="group inline-flex items-center gap-2 rounded-md border border-cyber/30 bg-cyber/5 px-5 py-2.5 text-sm font-medium text-cyber transition-all duration-200 hover:border-cyber/50 hover:shadow-[0_0_20px_-5px_oklch(0.8_0.13_195_/0.2)]"
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
             >
               <FileText className="h-4 w-4" />
-              View CV
-            </motion.a>
+              Download CV
+            </motion.button>
 
             <motion.a
               href="#contact"

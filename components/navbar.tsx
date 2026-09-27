@@ -148,7 +148,8 @@ export function Navbar() {
 
         <div className="hidden lg:flex items-center gap-2">
           <motion.a
-            href={profile.cvUrl}
+            href="/Ziad.pdf"
+            download="Ziad-Hodeeb-CV.pdf"
             className="inline-flex"
             variants={cvButtonVariants}
             initial="hidden"
@@ -230,14 +231,16 @@ export function Navbar() {
 
               <motion.li className="mt-2" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
                 <motion.a
-                  href={profile.cvUrl}
-                  className="block rounded-md border border-cyber/30 bg-cyber/5 px-3 py-3 text-center text-base font-medium text-cyber transition-colors hover:border-cyber/50"
+                  href="/Ziad.pdf"
+                  download="Ziad-Hodeeb-CV.pdf"
+                  onClick={() => setOpen(false)}
+                  className="block rounded-md border border-cyber/30 bg-cyber/5 px-3 py-3 text-center text-base font-medium text-cyber transition-colors hover:border-cyber/50 w-full"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   <span className="flex items-center justify-center gap-2">
                     <FileText className="h-4 w-4" />
-                    View CV
+                    Download CV
                   </span>
                 </motion.a>
               </motion.li>

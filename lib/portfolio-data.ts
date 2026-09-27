@@ -29,8 +29,7 @@ export const profile = {
   summary:
     "I'm a Computer Science student focused on offensive security — building practical, hands-on experience in web application penetration testing, API security, vulnerability assessment, and reconnaissance. I test only with proper authorization.",
   email: "ziad.hd3o@gmail.com",
-  resumeUrl: "/",
-  cvUrl: "/cv",
+  resumeUrl: "/Ziad.pdf",
 }
 
 export type SocialLink = {
